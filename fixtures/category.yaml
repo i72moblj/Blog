@@ -1,0 +1,7 @@
+App\Entity\Category:
+    category_1:
+        name: Desarrollo web
+        description: Categoría de desarrollo web
+    category_2:
+        name: Desarrollo Android
+        description: Categoría de desarrollo Android

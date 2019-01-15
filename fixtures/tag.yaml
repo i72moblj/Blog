@@ -1,0 +1,16 @@
+App\Entity\Tag:
+    tag_1:
+        name: php
+        description: php tag
+    tag_2:
+        name: symfony
+        description: symfony tag
+    tag_3:
+        name: html
+        description: html tag
+    tag_4:
+        name: zend framework 2
+        description: zend framework 2 tag
+    tag_5:
+        name: android
+        description: android tag

@@ -1,0 +1,17 @@
+App\Entity\User:
+    user_1:
+        role: ROLE_ADMIN
+        name: Victor
+        firstSurname: Robles
+        secondSurname: Pérez
+        email: victor@email.com
+        password: password de prueba
+        image:
+    user_2:
+        role: ROLE_USER
+        name: Juan
+        firstSurname: López
+        secondSurname: Pérez
+        email: juan@email.com
+        password: password de prueba
+        image:

@@ -1,0 +1,18 @@
+App\Entity\Post:
+    post_1:
+        title: Entrada de dasarrollo con PHP
+        content: Lorem ipsum dolor sit amet
+        status: PUBLISHED
+        image:
+        author: '@user_1'
+        category: '@category_1'
+        tags: ['@tag_1', '@tag_2']
+    post_2:
+        title: Entrada de dasarrollo con Android
+        content: Lorem ipsum dolor sit amet
+        status: PUBLISHED
+        image:
+        author: '@user_2'
+        category: '@category_2'
+        tags: ['@tag_5']
+        
