@@ -2,6 +2,8 @@ App\Entity\Category:
     category_1:
         name: Desarrollo web
         description: Categoría de desarrollo web
+        posts: ['@post_1']
     category_2:
         name: Desarrollo Android
         description: Categoría de desarrollo Android
+        posts: ['@post_2']

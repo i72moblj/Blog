@@ -1,17 +1,19 @@
 App\Entity\User:
     user_1:
         role: ROLE_ADMIN
-        name: Victor
-        firstSurname: Robles
-        secondSurname: Pérez
-        email: victor@email.com
+        name: <firstName()>
+        firstSurname: <LastName()>
+        secondSurname: <LastName()>
+        email: <email()>
         password: password de prueba
         image:
+        posts: ['@post_1']
     user_2:
         role: ROLE_USER
-        name: Juan
-        firstSurname: López
-        secondSurname: Pérez
-        email: juan@email.com
+        name: <firstName()>
+        firstSurname: <LastName()>
+        secondSurname: <LastName()>
+        email: <email()>
         password: password de prueba
         image:
+        posts: ['@post_2']
