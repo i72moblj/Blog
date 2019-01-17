@@ -4,7 +4,11 @@
         <meta charset="UTF-8">
         <title>{% block title %}Blog con Symfony 4{% endblock %}</title>
         {% block stylesheets %}
+            {# Bootstrap v4.2 #}
             <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}"/>
+            {# Font Awesome v5.6.3 #}
+            <link rel="stylesheet" href="{{ asset('css/all.min.css') }}"/>
+            {# Project custom styles #}
             <link rel="stylesheet" href="{{ asset('css/styles.css') }}"/>
         {% endblock %}
     </head>
@@ -13,8 +17,11 @@
         {% block content %}{% endblock %}
         {% block footer %}{% endblock %}
         {% block javascripts %}
+            {# jQuery v3.3.1 Slim #}
             <script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}"></script>
+            {# popper.js #}
             <script src="{{ asset('js/popper.min.js') }}"></script>
+            {# Bootstrap v4.2 #}
             <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         {% endblock %}
     </body>
