@@ -9,11 +9,9 @@
         {% endblock %}
     </head>
     <body>
-        <div class="container">
-            {% block header %}{% endblock %}
-            {% block content %}{% endblock %}
-            {% block footer %}{% endblock %}
-        </div>
+        {% block header %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% block footer %}{% endblock %}
         {% block javascripts %}
             <script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}"></script>
             <script src="{{ asset('js/popper.min.js') }}"></script>
