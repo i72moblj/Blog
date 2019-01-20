@@ -1,19 +1,19 @@
 App\Entity\User:
     user_1:
-        role: ROLE_ADMIN
+        email: <email()>
+        roles: ['ROLE_ADMIN', 'ROLE_USER']
+        password: \$2y\$13\$5GXNfP/47IOEepusw7aOmeKJjKqz2ZoJb3f6lWpS3LXKnukduThze
         name: <firstName()>
         firstSurname: <LastName()>
         secondSurname: <LastName()>
-        email: <email()>
-        password: password de prueba
         image:
         posts: ['@post_1']
     user_2:
-        role: ROLE_USER
+        email: <email()>        
+        roles: ['ROLE_USER']
+        password: \$2y\$13\$5GXNfP/47IOEepusw7aOmeKJjKqz2ZoJb3f6lWpS3LXKnukduThze
         name: <firstName()>
         firstSurname: <LastName()>
         secondSurname: <LastName()>
-        email: <email()>
-        password: password de prueba
         image:
         posts: ['@post_2']
