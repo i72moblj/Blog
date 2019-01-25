@@ -13,16 +13,14 @@
         {% endblock %}
     </head>
     <body>
-        <div class="container">
-            {% block header %}
-                {% include 'header.html.twig' %}
-            {% endblock %}
-            {% block body %}{% endblock %}
-            {% block footer %}
-                {% include 'footer.html.twig' %}
-            {% endblock %}
-        </div>
-        
+        {% block header %}
+            {% include 'header.html.twig' %}
+        {% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}
+            {% include 'footer.html.twig' %}
+        {% endblock %}
+                
         {% block javascripts %}
             {# jQuery v3.3.1 Slim #}
             <script src="{{ asset('js/jquery-3.3.1.slim.min.js') }}"></script>

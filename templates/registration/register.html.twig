@@ -3,24 +3,36 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
+    <div class="container">
+        <h1 class="h3 mb-3 font-weight-normal">Registro</h1>
 
-    {{ form_start(registrationForm) }}
-    {{ form_row(registrationForm.email) }}
+        {{ form_start(registrationForm) }}
 
-    <div>
-        {{ form_label(registrationForm.plainPassword, 'Password') }}
-        {{ form_errors(registrationForm.plainPassword) }}
-        {{ form_widget(registrationForm.plainPassword) }}
-        {{ form_help(registrationForm.plainPassword) }}
+        <div class="form-group">
+            {{ form_label(registrationForm.email) }}
+            {{ form_errors(registrationForm.email) }}
+            {{ form_widget(registrationForm.email, {'attr': {'class': 'form-control'}}) }}
+            {{ form_help(registrationForm.email) }}
+        </div>
+        <div class="form-group">
+            {{ form_label(registrationForm.plainPassword, 'Password') }}
+            {{ form_errors(registrationForm.plainPassword) }}
+            {{ form_widget(registrationForm.plainPassword, {'attr': {'class': 'form-control'}}) }}
+            {{ form_help(registrationForm.plainPassword) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(registrationForm.name) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(registrationForm.firstSurname) }}
+        </div>
+        <div class="form-group">
+            {{ form_row(registrationForm.secondSurname) }}
+        </div>
+
+        <button class="btn btn-lg btn-primary" type="submit">
+            Registro
+        </button>
+        {{ form_end(registrationForm) }}
     </div>
-
-    {{ form_row(registrationForm.name) }}
-    {{ form_row(registrationForm.firstSurname) }}
-    {{ form_row(registrationForm.secondSurname) }}
-
-    <button class="btn btn-lg btn-primary" type="submit">
-        Registro
-    </button>
-    {{ form_end(registrationForm) }}
 {% endblock %}
