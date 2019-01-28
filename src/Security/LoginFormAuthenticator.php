@@ -85,6 +85,11 @@ class LoginFormAuthenticator extends AbstractFormLoginAuthenticator
             return new RedirectResponse($targetPath);
         }
         
+        $request->getSession()->getFlashBag()->add(
+            'primary',
+            'Haz iniciado sesión. ¡Bienvenido de nuevo!'
+        );
+        
         return new RedirectResponse('/');
 
         // For example : return new RedirectResponse($this->router->generate('some_route'));

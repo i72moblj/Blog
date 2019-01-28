@@ -16,6 +16,21 @@
         {% block header %}
             {% include 'header.html.twig' %}
         {% endblock %}
+        
+        {# Flash messages #}
+        <div class="container">
+            {% for label, messages in app.flashes %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ label }} alert-dismissible fade show">
+                        {{ message }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+        
         {% block body %}{% endblock %}
         {% block footer %}
             {% include 'footer.html.twig' %}
